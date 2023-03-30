@@ -1,0 +1,12 @@
+@font-face {
+    font-family:ous;
+    src:url(../font/Righteous-Regular.woff2) format("woff2"),
+    url(../font/Righteous-Regular.woff) format("woff");
+    font-weight:700;
+}
+@font-face {
+    font-family:patrick;
+    src:url(../font/PatrickHand-Regular.woff2) format("woff2"),
+    url(../font/PatrickHand-Regular.woff) format("woff");
+    font-weight:400;
+}

@@ -1,0 +1,493 @@
+.page {
+    padding:50px 15px 50px ;
+    max-width:100vw;
+    height: 1000px;
+    background:url(../img/block_1/stone.jpg)no-repeat 100% /cover;
+}
+.hiden {
+    display: none;
+}
+.box {
+    margin: auto;
+    position: relative;
+    width: 413px;
+    min-height: 600px;
+    border-radius: 20px;
+}
+.btn1 {
+    left:1.5%;
+    border-radius: 0 0 0 14px;
+}
+.btn1:hover {
+    border-bottom:3px solid #35355b;
+    background:linear-gradient(#ababab,#f2f2fb);
+}
+.btn1:hover ~ .experience {
+    display: none;
+}
+.btn2 {
+    left:33.85%;
+}
+.btn2:hover {
+    border-bottom:3px solid #35355b ;
+    background:linear-gradient(#5d5bc7a7,#f2f2fb);
+}
+/* .btn2:hover ~ .experience {
+    display: flex;
+} */
+/* .btn2:hover ~ .about {
+    visibility: hidden;
+} */
+.btn3 {
+    right:1.5%;
+    border-radius: 0 0 14px 0;
+}
+.btn3:hover {
+    border-bottom:3px solid #35355b ;
+     background:linear-gradient(#ababab,#f2f2fb);
+}
+/* .btn3:hover ~ .contact {
+    visibility:visible;
+    background:linear-gradient(#9a933b93,#f2f2fb);
+}
+.btn3:hover ~ .about {
+    visibility:hidden;
+}
+.btn3:hover ~ .experience {
+    display: none;
+} */
+.about,.experience, .contact {
+    padding: 15px 15px 70px;
+    width: 413px;
+    height: 600px;
+    border-radius: 20px;
+    border:7px solid rgba(255,255,255,.5); 
+    background:rgba(255,255,255,.6);
+    box-shadow: inset 0 0px 100px 10px #82828e;
+    position: absolute;
+    top: 0%;
+    z-index: 5;
+}
+.about,.experience,.top, .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.top {
+    gap: 0px;
+}
+.img {
+    width: 150px;
+    height: 150px;
+}
+.foto {
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    object-fit: cover;
+    box-shadow: 0 10px 100px 10px #323232;
+}
+.name, .about__title, .experience__title, .head, .contact__title, .button  {
+    text-transform: capitalize;
+    font-family:ous,serif;
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    color: #000;
+}
+.job, .about__text, .btn1, .btn2, .btn3, .info, .infon, .left,.left2, .left3, .dann__link {
+    text-transform: uppercase;
+    font-family:patrick,serif;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #000;
+}
+/*=================================BTN=====================================*/
+.btn1, .btn2, .btn3 {
+    /* width: 133.6px; */
+    width: 32.33%;
+    height: 40px;
+    position: absolute;
+    bottom:1%;
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+    border: 3px solid transparent;
+    background: rgba(255,255,255,.8);
+    z-index: 6;
+}
+.about__down {
+    padding: 5px;
+}
+.about__icon {
+    width: 100%;
+    padding: 20px 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.about__text {
+    text-transform:none;
+    font-size: 16px;
+}
+.svg1 {
+    animation: jump 6s linear 3s infinite;
+}
+.svg2 {
+    animation: jump2 6s linear 3s infinite;
+}
+.svg3 {
+    animation: jump3 6s linear 3s infinite;
+}
+.svgpath {
+    fill: #000;
+}
+.svg1, .svg2, .svg3{
+  stop-color: #000;
+  width: 40px;
+  height: 40px;
+}
+.svg1:hover {
+    animation: jump2 0s linear;
+}
+.svg2:hover {
+    animation: jump2 0s linear;
+}
+.svg3:hover {
+    fill: #2d2d9fd0;
+    animation: jump3 0s linear;
+}
+.svgpath:hover {
+     fill: #2d2d9fd0;
+}
+/*======================================Exprer============================*/
+.experience {
+    justify-content: space-around;
+    display: none;
+    background:linear-gradient(-45deg,#7876cfa7,#f2f2fb) 0px 0px / 300%;
+    animation: go 30s linear infinite;
+    z-index: 2;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:30px;
+}
+.size {
+    width: 100px;
+    height: 100px;
+}
+.experience__down {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.experience__title {
+    text-align: center;
+}
+.experience__flex, .contact__flex {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    min-height: 100px;
+}
+.left,.left2, .left3 {
+    color: #323232;
+    font-size: 14px;
+    align-self:center;
+}
+.left::after {
+    visibility: hidden;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border: 5px solid transparent;
+    border-left: 10px solid #000;
+    position: absolute;
+    top:12%;
+    left:22.3%;
+    animation: left 10s linear 1 2s;
+}
+.left2::after {
+    visibility: hidden;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border: 5px solid transparent;
+    border-left: 10px solid #000000;
+    position: absolute;
+    top:12%;
+    left:22.3%;
+    animation: left2 10s linear 1 10s;
+}
+.left3::after {
+    visibility: hidden;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border: 5px solid transparent;
+    border-left: 10px solid #000000;
+    position: absolute;
+    top:12%;
+    left:22.3%;
+    animation: left3 10s linear 1 20s;
+}
+.center {
+    width: 20px;
+}
+.center::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    top:0%;
+    left:21.6%;
+    z-index: 1;
+}
+.center::after {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 100%;
+    background:linear-gradient(#0e0eb8,#57579d,#8989f3);
+    position: absolute;
+    top:0%;
+    left:22.3%;
+    z-index: 0;
+}
+.right {
+    width:250px;
+    text-align: left;
+}
+.head {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.info, .infon {
+    font-size: 10px;
+}
+.infon {
+     color: #0000007b;
+}
+/*======================Contact==================================*/
+.contact {
+   display: none;
+}
+.contact__flex {
+    position: relative;
+    align-items: center;
+}
+.dann__link {
+    font-size: 15px;
+    text-align: left;
+}
+.contact__down {
+    display: flex;
+    flex-direction: column;
+}
+.dann {
+    width: 100%;
+}
+.wrapper {
+    align-self: center;
+}
+.pet {
+    position: absolute;
+    bottom: 13%;
+    right: 20%;
+    transform: rotate(-120deg);
+    z-index: 3;
+}
+.pet__paw {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    fill: #000;
+    animation: paws 4s linear infinite;
+}
+.pet2 {
+    position: absolute;
+    bottom: 25%;
+    right: 0%;
+    transform: rotate(260deg);
+}
+.pet2__paw2 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    animation: paws2 4s linear infinite;
+}
+.pet3__paw3 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    animation: paws3 4s linear infinite;
+}
+.pet3 {
+    position: absolute;
+    bottom: 16%;
+    right: 5%;
+    transform: rotate(222deg);
+}
+.button {
+    width: 250px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    background: linear-gradient(#2a2a33,#f2f2fb) no-repeat;
+    border: none;
+    border-radius: 7px;
+    animation: but 4s linear infinite;
+}
+.svgcon1, .svgcon2, .svgcon3 {
+     width: 30px;
+     height: 30px;
+     animation: call1 3s linear 3s infinite;
+}
+.svgcon2 {
+    animation: call2 3s linear 3s infinite;
+}
+.svgcon3 {
+    animation: call3 3s linear 3s infinite;
+}
+/*================================MEDIA===============================*/
+@media (min-width:466px) {
+.hidden {
+    display:none;
+}
+}
+@media (max-width:466px) {
+    .box {
+    width:300px;
+    min-height: 600px;
+}
+.about,.experience, .contact {
+    justify-content: space-around;
+    padding: 15px 15px 70px;
+    width:270px;
+}
+.btn1, .btn2, .btn3 {
+    width: 28.6%;
+    height: 40px;
+}
+.btn1 {
+    left:2.1%;
+}
+.btn2 {
+    left:30.7%;
+}
+.btn3 {
+    right:12.1%;
+}
+.name, .about__title, .experience__title, .head, .contact__title, .button  {
+    font-size: 20px;
+    line-height: 1.2;
+}
+.job, .about__text, .btn1, .btn2, .btn3, .info, .infon, .left, .dann__link {
+    font-size: 14px;
+    line-height: 1.2;
+}
+.experience__flex {
+    width: 260px;
+    padding: 10px;
+    min-height:0px;
+}
+.left, .left2, .left3, .center {
+    display: none;
+}
+.left::after, .left2::after, .left3::after {
+    animation: none;
+}
+.head {
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+.info, .infon {
+    padding: 0px 0 0 15px;
+    font-size: 10px;
+    text-align: left;
+}
+.info::before {
+    content: "\2605";
+    font-size: 8px;
+    padding:0 3px 0 3px;
+    color: #fff700;
+}
+.infon::before {
+    content: "\2606";
+    font-size: 8px;
+    padding:0 3px 0 3px;
+}
+.img {
+    display:none;
+}
+.hidden {
+    display: block;
+}
+.button {
+    width: 200px;
+}
+.center::before {
+    top:10%;
+    left:30%;
+}
+.center::after {
+    height:90%;
+    top:15%;
+    left:31%;
+}
+.dann {
+    width: 60%;
+}
+.pet {
+    position: absolute;
+    bottom: 16%;
+    right: 12%;
+}
+.pet2 {
+    bottom:23%;
+    transform: rotate(252deg);
+}
+.pet3 {
+    bottom:18%;
+    right:1%;
+    transform: rotate(206deg);
+}
+.pet__paw, .pet2__paw2, .pet3__paw3 {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}}
+/* @media (max-width:315px) {
+    .box {
+    width:300px;
+    min-height: 600px;
+}
+.btn1, .btn2, .btn3 {
+    width: 85.8px;
+    height: 40px;
+}
+.btn1 {
+    left:2.1%;
+}
+.btn2 {
+    /* border-left:0.5px solid rgba(255,255,255,.8) ; */
